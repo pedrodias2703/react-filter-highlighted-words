@@ -23,7 +23,7 @@ class TextFilter extends Component {
   
   render() {
     return (
-      <div className="text-editor">
+      <div>
       {this.showFilteredWords()}
       </div>
     )

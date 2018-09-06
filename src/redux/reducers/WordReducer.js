@@ -7,9 +7,13 @@ export default (state = INITIAL_STATE, action) => {
     const { type, payload } = action;
     switch (type) {
         case WORDS.ADD_WORD:
-            const { color, word } = payload;
-            state[color].push(word);
+            const { color: colorAdd, word: wordAdd } = payload;
+            state[colorAdd].push(wordAdd);
             return { ...state  };
+        case WORDS.REMOVE_WORD:
+            const { color: colorRemove, word: wordRemove } = payload;
+            state[colorRemove] = state[colorRemove].filter( el => el !== wordRemove);
+            return { ...state };
         case WORDS.CLEAR_WORDS:
             return { ...INITIAL_STATE };
         default:

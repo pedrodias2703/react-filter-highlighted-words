@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import { Button } from 'semantic-ui-react'
+import classNames from 'classnames';
 
 import { setSelectedColor, setFilteredColor, removeFilteredColor } from '../../../redux/actions/ColorActions';
 import { COLORS, ROLES } from '../../../constants';
 
+import './ColorButton.css';
+
 class ColorButton extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = { 
-            isMarked: false
-        }
-    }
-
     handleClick = () => {
         const {
             dispatchSelectedColor,
@@ -33,14 +27,8 @@ class ColorButton extends Component {
             case ROLES.FILTERING:
                 if (colors.filteredColors.includes(color)){
                     dispatchRemoveFilteredColor(color);
-                    this.setState({
-                        isMarked: false
-                    })
                 } else {
                     dispatchAddFilteredColor(color);
-                    this.setState({
-                        isMarked: true
-                    })
                 }
                 break;
             default:
@@ -49,16 +37,17 @@ class ColorButton extends Component {
     }
 
     render() {
-        const { color, colors, role } = this.props;
-        const { isMarked } = this.state;
+        const { color, role, colors: { filteredColors, selectedColor } } = this.props;
+
+        const selectedFiltered = ROLES.FILTERING === role && filteredColors.includes(color);
+        const selectedMarked = ROLES.MARKING === role && selectedColor === color;
 
         const classes = classNames({
-            'color-block': true,
-            'markedFiltering': isMarked,
-            'markedMarking': colors.selectedColor === color && role === ROLES.MARKING
-        })
+            'selected': selectedFiltered || selectedMarked
+        });
+
         return (
-            <Button basic className={`${classes} ${color}`} onClick={this.handleClick}>
+            <Button color={color} className={classes} onClick={this.handleClick}>
                 {color.toUpperCase()}
             </Button>
         );

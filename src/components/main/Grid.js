@@ -8,7 +8,7 @@ import { ROLES } from "../../constants";
 const COLUMNS_SIZE = 3;
 
 export default () => (
-    <Grid divided='vertically'>
+    <Grid stackable padded="vertically">
       <Grid.Row columns={COLUMNS_SIZE} verticalAlign='middle'>
         <Grid.Column width={2}>
           <Segment circular inverted>Mark!</Segment>

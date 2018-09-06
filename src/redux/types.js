@@ -6,5 +6,6 @@ export const COLOR = {
 
 export const WORDS = {
     ADD_WORD: 'ADD_WORD_TO_LIST',
+    REMOVE_WORD: 'REMOVE_WORD_FROM_LIST',
     CLEAR_WORDS: 'CLEAR_WORDS_LIST'
 }
