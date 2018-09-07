@@ -4,29 +4,6 @@ exports[`Grid renders correctly 1`] = `
 <Table
   as="table"
 >
-  <TableHeader
-    as="thead"
-  >
-    <TableRow
-      as="tr"
-      cellAs="td"
-      textAlign="center"
-    >
-      <TableHeaderCell
-        as="th"
-      />
-      <TableHeaderCell
-        as="th"
-      >
-        COLORS
-      </TableHeaderCell>
-      <TableHeaderCell
-        as="th"
-      >
-        WORDS
-      </TableHeaderCell>
-    </TableRow>
-  </TableHeader>
   <TableBody
     as="tbody"
   >
