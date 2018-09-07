@@ -5,4 +5,4 @@ exports[`Main renders correctly 1`] = `
   <Component />
   <Component />
 </Container>
-`;
+`

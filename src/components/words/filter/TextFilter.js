@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Label, Segment } from 'semantic-ui-react'
 
 import '../words.css'
 
 class TextFilter extends Component {
   showFilteredWords = () => {
-    const { words, colors: { filteredColors } } = this.props;
+    const { words, colors: { filteredColors } } = this.props
     
     return (
       <Label.Group> {
@@ -37,4 +37,4 @@ const mapStateToProps = state => ({
   colors: state.colors
 })
 
-export default connect(mapStateToProps)(TextFilter);
+export default connect(mapStateToProps)(TextFilter)

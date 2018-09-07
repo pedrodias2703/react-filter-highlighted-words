@@ -20,4 +20,4 @@ exports[`ButtonGroup renders correctly 1`] = `
     role="mock"
   />
 </div>
-`;
+`

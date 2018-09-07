@@ -10,7 +10,7 @@ describe('words actions', () => {
       payload: { color, word }
     }
     expect(addWord(color, word)).toEqual(expectedAction)
-  });
+  })
 
   test('should create an action to remove a word', () => {
     const color = 'green'
@@ -20,5 +20,5 @@ describe('words actions', () => {
       payload: { color, word }
     }
     expect(removeWord(color, word)).toEqual(expectedAction)
-  });
+  })
 })

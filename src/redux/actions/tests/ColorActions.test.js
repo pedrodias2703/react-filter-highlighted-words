@@ -9,7 +9,7 @@ describe('color actions', () => {
       payload: color
     }
     expect(setSelectedColor(color)).toEqual(expectedAction)
-  });
+  })
 
   test('should create an action to set a filtering color', () => {
     const color = 'green'
@@ -18,7 +18,7 @@ describe('color actions', () => {
       payload: color
     }
     expect(setFilteredColor(color)).toEqual(expectedAction)
-  });
+  })
 
   test('should create an action to remove a filtering color', () => {
     const color = 'yellow'
@@ -27,5 +27,5 @@ describe('color actions', () => {
       payload: color
     }
     expect(removeFilteredColor(color)).toEqual(expectedAction)
-  });
+  })
 })

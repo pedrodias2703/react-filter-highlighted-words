@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import configureStore from 'redux-mock-store'
 
-import { TextMarker } from '../..';
+import { TextMarker } from '../..'
 
 const mockStore = configureStore()
 const store = mockStore({

@@ -56,4 +56,4 @@ exports[`Grid renders correctly 1`] = `
     </GridColumn>
   </GridRow>
 </Grid>
-`;
+`

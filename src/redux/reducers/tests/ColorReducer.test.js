@@ -1,5 +1,5 @@
-import ColorReducer from '../ColorReducer';
-import { COLOR } from '../../types';
+import ColorReducer from '../ColorReducer'
+import { COLOR } from '../../types'
 
 describe('color reducer', () => {
     test('should return the intestial state', () => {

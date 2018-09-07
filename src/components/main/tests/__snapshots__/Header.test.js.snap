@@ -18,4 +18,4 @@ exports[`header renders correctly 1`] = `
     Pedro Dias - pedroboi@gmail.com
   </HeaderSubheader>
 </Header>
-`;
+`

@@ -7,7 +7,7 @@ Array [
     "type": "SET_FILTERED_COLOR",
   },
 ]
-`;
+`
 
 exports[`ColorButton renders correctly 1`] = `
 <Button
@@ -19,4 +19,4 @@ exports[`ColorButton renders correctly 1`] = `
 >
   RED
 </Button>
-`;
+`

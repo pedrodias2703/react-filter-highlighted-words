@@ -1,7 +1,7 @@
-import TextFilter from "./filter/TextFilter";
-import TextMarker from "./marker/TextMarker";
+import TextFilter from "./filter/TextFilter"
+import TextMarker from "./marker/TextMarker"
 
 export {
     TextFilter,
     TextMarker
-};
+}

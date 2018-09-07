@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 import { Table, Label } from 'semantic-ui-react'
 
-import { ButtonGroup } from '../colors';
-import { TextFilter, TextMarker } from "../words";
-import { ROLES } from "../../constants";
+import { ButtonGroup } from '../colors'
+import { TextFilter, TextMarker } from "../words"
+import { ROLES } from "../../constants"
 
 export default () => (
   <Table >
   <Table.Header>
-    <Table.Row>
+    <Table.Row textAlign="center">
       <Table.HeaderCell />
       <Table.HeaderCell>COLORS</Table.HeaderCell>
       <Table.HeaderCell>WORDS</Table.HeaderCell>
@@ -28,4 +28,4 @@ export default () => (
     </Table.Row>
   </Table.Body>
 </Table>
-);
+)

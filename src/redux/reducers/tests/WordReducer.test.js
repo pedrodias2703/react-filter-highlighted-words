@@ -1,5 +1,5 @@
-import WordReducer from '../WordReducer';
-import { WORDS } from '../../types';
+import WordReducer from '../WordReducer'
+import { WORDS } from '../../types'
 
 describe('word reducer', () => {
     it('should return the initial state', () => {

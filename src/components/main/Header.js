@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Header, Icon } from 'semantic-ui-react'
 
 export default () => (
@@ -7,4 +7,4 @@ export default () => (
     <Header.Content>WAES Assessment</Header.Content>
     <Header.Subheader>Pedro Dias - pedroboi@gmail.com</Header.Subheader>
   </Header>
-);
+)

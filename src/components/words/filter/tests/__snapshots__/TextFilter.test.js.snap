@@ -7,7 +7,7 @@ Array [
     "type": "SET_FILTERED_COLOR",
   },
 ]
-`;
+`
 
 exports[`TextFilter renders correctly intiallly 1`] = `
 <div>
@@ -15,4 +15,4 @@ exports[`TextFilter renders correctly intiallly 1`] = `
      
   </LabelGroup>
 </div>
-`;
+`

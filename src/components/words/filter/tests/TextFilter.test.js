@@ -3,8 +3,8 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import configureStore from 'redux-mock-store'
 
-import { TextFilter } from '../..';
-import { setFilteredColor } from "../../../../redux/actions/ColorActions";
+import { TextFilter } from '../..'
+import { setFilteredColor } from "../../../../redux/actions/ColorActions"
 
 const mockStore = configureStore()
 const store = mockStore({
