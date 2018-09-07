@@ -14,8 +14,6 @@ export default (state = INITIAL_STATE, action) => {
             const { color: colorRemove, word: wordRemove } = payload;
             state[colorRemove] = state[colorRemove].filter( el => el !== wordRemove);
             return { ...state };
-        case WORDS.CLEAR_WORDS:
-            return { ...INITIAL_STATE };
         default:
             return state;
     }

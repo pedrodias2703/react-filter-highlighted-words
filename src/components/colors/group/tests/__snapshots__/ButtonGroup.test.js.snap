@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup renders correctly 1`] = `
+<div
+  className="ui buttons"
+>
+  <Connect(ColorButton)
+    color="red"
+    key="mock-red"
+    role="mock"
+  />
+  <Connect(ColorButton)
+    color="yellow"
+    key="mock-yellow"
+    role="mock"
+  />
+  <Connect(ColorButton)
+    color="green"
+    key="mock-green"
+    role="mock"
+  />
+</div>
+`;

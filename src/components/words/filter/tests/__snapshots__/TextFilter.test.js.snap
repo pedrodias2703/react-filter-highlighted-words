@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextFilter renders correct when words are filtered 1`] = `
+Array [
+  Object {
+    "payload": "red",
+    "type": "SET_FILTERED_COLOR",
+  },
+]
+`;
+
+exports[`TextFilter renders correctly intiallly 1`] = `
+<div>
+  <LabelGroup>
+     
+  </LabelGroup>
+</div>
+`;

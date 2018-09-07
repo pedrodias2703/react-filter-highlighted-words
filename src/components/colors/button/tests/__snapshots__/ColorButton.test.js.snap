@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorButton onClick 1`] = `
+Array [
+  Object {
+    "payload": "red",
+    "type": "SET_FILTERED_COLOR",
+  },
+]
+`;
+
+exports[`ColorButton renders correctly 1`] = `
+<Button
+  as="button"
+  className=""
+  color="red"
+  onClick={[Function]}
+  role="button"
+>
+  RED
+</Button>
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders correctly 1`] = `
+<Grid
+  padded="vertically"
+  stackable={true}
+>
+  <GridRow
+    columns={3}
+    verticalAlign="middle"
+  >
+    <GridColumn
+      width={2}
+    >
+      <Segment
+        circular={true}
+        inverted={true}
+      >
+        Mark!
+      </Segment>
+    </GridColumn>
+    <GridColumn>
+      <BlockGroup
+        role="ROLE_MARKING"
+      />
+    </GridColumn>
+    <GridColumn
+      width={8}
+    >
+      <Connect(TextMarker) />
+    </GridColumn>
+  </GridRow>
+  <GridRow
+    columns={3}
+    verticalAlign="middle"
+  >
+    <GridColumn
+      width={2}
+    >
+      <Segment
+        circular={true}
+        inverted={true}
+      >
+        Filter!
+      </Segment>
+    </GridColumn>
+    <GridColumn>
+      <BlockGroup
+        role="ROLE_FILTERING"
+      />
+    </GridColumn>
+    <GridColumn
+      stretched={true}
+    >
+      <Connect(TextFilter) />
+    </GridColumn>
+  </GridRow>
+</Grid>
+`;

@@ -33,11 +33,9 @@ class TextMarker extends Component {
       const attributes = node.attributes.getNamedItem('style').value.split(':')
       if (attributes[0] === 'background-color') {
         const color = attributes[1].slice(0, attributes[1].length-1).trim();
-        // console.log(attributes[1]);
         node.replaceWith(word);
         removeWord(color, word);
       }
-      // debugger
     }
   }
   
