@@ -24,3 +24,9 @@ If you want, you can click the highlighted text in order to remove the color fro
 
 ### Filtering
 On the *Filter!* section you can selected any combination of colors you want. Having any text highlighted in that color inside the container above, you should see all the words dipplayed for the selected colors on the right-hand side.
+
+## P.S
+Sorry folks at WAES, didn't have much time to polish things the way I wanted, but I did my best within the time frame.<br/><br/>
+I know code documentation is requirement but I found it very simple to understand. For this reason, I make myself available to any clarification that might be needed by you guys.
+
+Hope to hear from you soon!
