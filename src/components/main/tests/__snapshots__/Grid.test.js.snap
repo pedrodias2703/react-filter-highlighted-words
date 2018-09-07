@@ -1,59 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid renders correctly 1`] = `
-<Grid
-  padded="vertically"
-  stackable={true}
+<Table
+  as="table"
 >
-  <GridRow
-    columns={3}
-    verticalAlign="middle"
+  <TableHeader
+    as="thead"
   >
-    <GridColumn
-      width={2}
+    <TableRow
+      as="tr"
+      cellAs="td"
+      textAlign="center"
     >
-      <Segment
-        circular={true}
-        inverted={true}
-      >
-        Mark!
-      </Segment>
-    </GridColumn>
-    <GridColumn>
-      <BlockGroup
-        role="ROLE_MARKING"
+      <TableHeaderCell
+        as="th"
       />
-    </GridColumn>
-    <GridColumn
-      width={8}
-    >
-      <Connect(TextMarker) />
-    </GridColumn>
-  </GridRow>
-  <GridRow
-    columns={3}
-    verticalAlign="middle"
+      <TableHeaderCell
+        as="th"
+      >
+        COLORS
+      </TableHeaderCell>
+      <TableHeaderCell
+        as="th"
+      >
+        WORDS
+      </TableHeaderCell>
+    </TableRow>
+  </TableHeader>
+  <TableBody
+    as="tbody"
   >
-    <GridColumn
-      width={2}
+    <TableRow
+      as="tr"
+      cellAs="td"
+      verticalAlign="top"
     >
-      <Segment
-        circular={true}
-        inverted={true}
+      <TableCell
+        as="td"
       >
-        Filter!
-      </Segment>
-    </GridColumn>
-    <GridColumn>
-      <BlockGroup
-        role="ROLE_FILTERING"
-      />
-    </GridColumn>
-    <GridColumn
-      stretched={true}
+        <Label
+          ribbon={true}
+          size="big"
+        >
+          Mark!
+        </Label>
+      </TableCell>
+      <TableCell
+        as="td"
+      >
+        <BlockGroup
+          role="ROLE_MARKING"
+        />
+      </TableCell>
+      <TableCell
+        as="td"
+      >
+        <Connect(TextMarker) />
+      </TableCell>
+    </TableRow>
+    <TableRow
+      as="tr"
+      cellAs="td"
+      verticalAlign="top"
     >
-      <Connect(TextFilter) />
-    </GridColumn>
-  </GridRow>
-</Grid>
-`
+      <TableCell
+        as="td"
+      >
+        <Label
+          ribbon={true}
+          size="big"
+        >
+          Filter!
+        </Label>
+      </TableCell>
+      <TableCell
+        as="td"
+      >
+        <BlockGroup
+          role="ROLE_FILTERING"
+        />
+      </TableCell>
+      <TableCell
+        as="td"
+      >
+        <Connect(TextFilter) />
+      </TableCell>
+    </TableRow>
+  </TableBody>
+</Table>
+`;

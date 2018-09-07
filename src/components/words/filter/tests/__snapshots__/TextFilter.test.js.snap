@@ -7,12 +7,16 @@ Array [
     "type": "SET_FILTERED_COLOR",
   },
 ]
-`
+`;
 
 exports[`TextFilter renders correctly intiallly 1`] = `
-<div>
-  <LabelGroup>
-     
-  </LabelGroup>
-</div>
-`
+<Segment
+  className="editor"
+>
+  <div>
+    <LabelGroup>
+       
+    </LabelGroup>
+  </div>
+</Segment>
+`;
