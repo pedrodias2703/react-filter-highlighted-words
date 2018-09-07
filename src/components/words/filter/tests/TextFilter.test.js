@@ -38,9 +38,8 @@ describe('TextFilter', () => {
 
     test('renders correct when words are filtered', () => {
         store.dispatch(setFilteredColor('red'))
-
+        
         const { wrapper } = instance()
-        const component = wrapper.dive()
 
         expect(store.getActions()).toMatchSnapshot()
     })
