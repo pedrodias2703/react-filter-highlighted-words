@@ -5,7 +5,7 @@ const reducer = combineReducers(reducers)
 
 const store = createStore(
   reducer,
-  window.devToolsExtension ? window.devToolsExtension() : f => f
+  window.devToolsExtension ? window.devToolsExtension() : f => f,
 )
 
 export default store

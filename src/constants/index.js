@@ -1,10 +1,10 @@
 export const COLORS = {
   RED: 'red',
   YELLOW: 'yellow',
-  GREEN: 'green'
+  GREEN: 'green',
 }
 
 export const ROLES = {
   MARKING: 'ROLE_MARKING',
-  FILTERING: 'ROLE_FILTERING'
+  FILTERING: 'ROLE_FILTERING',
 }

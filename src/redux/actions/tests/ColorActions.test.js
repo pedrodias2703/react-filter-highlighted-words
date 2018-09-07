@@ -1,4 +1,4 @@
-import { setSelectedColor, setFilteredColor, removeFilteredColor} from '../ColorActions'
+import { setSelectedColor, setFilteredColor, removeFilteredColor } from '../ColorActions'
 import { COLOR } from '../../types'
 
 describe('color actions', () => {
@@ -6,7 +6,7 @@ describe('color actions', () => {
     const color = 'red'
     const expectedAction = {
       type: COLOR.SET_SELECTED,
-      payload: color
+      payload: color,
     }
     expect(setSelectedColor(color)).toEqual(expectedAction)
   })
@@ -15,7 +15,7 @@ describe('color actions', () => {
     const color = 'green'
     const expectedAction = {
       type: COLOR.SET_FILTERED,
-      payload: color
+      payload: color,
     }
     expect(setFilteredColor(color)).toEqual(expectedAction)
   })
@@ -24,7 +24,7 @@ describe('color actions', () => {
     const color = 'yellow'
     const expectedAction = {
       type: COLOR.REMOVE_FILTERED,
-      payload: color
+      payload: color,
     }
     expect(removeFilteredColor(color)).toEqual(expectedAction)
   })

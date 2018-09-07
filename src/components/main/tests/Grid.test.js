@@ -6,7 +6,7 @@ import Grid from '../Grid'
 describe('Grid', () => {
   test('renders correctly', () => {
     const wrapper = shallow(<Grid />)
-    
+
     expect(toJson(wrapper)).toMatchSnapshot()
-  })    
+  })
 })

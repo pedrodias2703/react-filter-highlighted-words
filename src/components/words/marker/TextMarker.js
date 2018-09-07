@@ -42,7 +42,7 @@ class TextMarker extends Component {
     const sel = window.getSelection()
     if (selectedColor && !sel.isCollapsed) {
       addWord(selectedColor, sel.toString())
-      let range = sel.getRangeAt(0)
+      const range = sel.getRangeAt(0)
       sel.removeAllRanges()
       document.designMode = "on"
       sel.addRange(range)

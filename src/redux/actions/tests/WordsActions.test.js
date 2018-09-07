@@ -7,7 +7,7 @@ describe('words actions', () => {
     const word = 'In the light you will find the road'
     const expectedAction = {
       type: WORDS.ADD_WORD,
-      payload: { color, word }
+      payload: { color, word },
     }
     expect(addWord(color, word)).toEqual(expectedAction)
   })
@@ -17,7 +17,7 @@ describe('words actions', () => {
     const word = 'dolphins'
     const expectedAction = {
       type: WORDS.REMOVE_WORD,
-      payload: { color, word }
+      payload: { color, word },
     }
     expect(removeWord(color, word)).toEqual(expectedAction)
   })

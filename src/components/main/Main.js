@@ -12,5 +12,5 @@ const Main = () => (
     <Grid />
   </Container>
 )
-  
+
 export default Main

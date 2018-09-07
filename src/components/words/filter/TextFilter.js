@@ -10,11 +10,9 @@ class TextFilter extends Component {
     
     return (
       <Label.Group> {
-        filteredColors.map( color => {
-          return words[color].sort().map( (word, i) => (
+        filteredColors.map( color => words[color].sort().map( (word, i) => (
             <Label key={i} color={color}>{word}</Label> 
-          ))
-        })
+          )))
       }
       </Label.Group>
     )

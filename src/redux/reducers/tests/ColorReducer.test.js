@@ -4,7 +4,7 @@ import { COLOR } from '../../types'
 describe('color reducer', () => {
   test('should return the intestial state', () => {
     expect(ColorReducer(undefined, {})).toEqual(
-      { selectedColor: null, filteredColors: [] }
+      { selectedColor: null, filteredColors: [] },
     )
   })
 
@@ -12,21 +12,21 @@ describe('color reducer', () => {
     expect(
       ColorReducer(undefined, {
         type: COLOR.SET_SELECTED,
-        payload: 'green'
-      })
+        payload: 'green',
+      }),
     ).toEqual(
-      { filteredColors: [], selectedColor: 'green' }
+      { filteredColors: [], selectedColor: 'green' },
     )
 
     expect(
-      ColorReducer({ 
-        selectedColor: 'green', filteredColors: [] 
+      ColorReducer({
+        selectedColor: 'green', filteredColors: [],
       }, {
         type: COLOR.SET_SELECTED,
-        payload: 'yellow'
-      })
+        payload: 'yellow',
+      }),
     ).toEqual({
-      filteredColors: [], selectedColor: 'yellow'
+      filteredColors: [], selectedColor: 'yellow',
     })
   })
 
@@ -34,21 +34,21 @@ describe('color reducer', () => {
     expect(
       ColorReducer(undefined, {
         type: COLOR.SET_FILTERED,
-        payload: 'green'
-      })
+        payload: 'green',
+      }),
     ).toEqual(
-      { filteredColors: ['green'], "selectedColor": null }
+      { filteredColors: ['green'], selectedColor: null },
     )
 
     expect(
-      ColorReducer({ 
-        selectedColor: null, filteredColors: ['green'] 
+      ColorReducer({
+        selectedColor: null, filteredColors: ['green'],
       }, {
         type: COLOR.SET_FILTERED,
-        payload: 'yellow'
-      })
+        payload: 'yellow',
+      }),
     ).toEqual({
-      selectedColor: null, filteredColors: ['green', 'yellow'] 
+      selectedColor: null, filteredColors: ['green', 'yellow'],
     })
   })
 
@@ -56,32 +56,32 @@ describe('color reducer', () => {
     expect(
       ColorReducer(undefined, {
         type: COLOR.REMOVE_FILTERED,
-        payload: 'green'
-      })
+        payload: 'green',
+      }),
     ).toEqual(
-      { filteredColors: [], "selectedColor": null }
+      { filteredColors: [], selectedColor: null },
     )
 
     expect(
-      ColorReducer({ 
-        selectedColor: null, filteredColors: ['green'] 
+      ColorReducer({
+        selectedColor: null, filteredColors: ['green'],
       }, {
         type: COLOR.REMOVE_FILTERED,
-        payload: 'yellow'
-      })
+        payload: 'yellow',
+      }),
     ).toEqual({
-      selectedColor: null, filteredColors: ['green'] 
+      selectedColor: null, filteredColors: ['green'],
     })
 
     expect(
-      ColorReducer({ 
-        selectedColor: null, filteredColors: ['green', 'yellow'] 
+      ColorReducer({
+        selectedColor: null, filteredColors: ['green', 'yellow'],
       }, {
         type: COLOR.REMOVE_FILTERED,
-        payload: 'yellow'
-      })
+        payload: 'yellow',
+      }),
     ).toEqual({
-      selectedColor: null, filteredColors: ['green'] 
+      selectedColor: null, filteredColors: ['green'],
     })
   })
 })

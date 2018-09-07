@@ -3,5 +3,5 @@ import WordReducer from './WordReducer'
 
 export default {
   colors: ColorReducer,
-  words: WordReducer
+  words: WordReducer,
 }
