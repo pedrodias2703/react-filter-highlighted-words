@@ -20,7 +20,6 @@ class TextFilter extends Component {
     )
   }
   
-  
   render() {
     return (
       <Segment className="editor">
