@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Label } from 'semantic-ui-react'
+import { Label, Segment } from 'semantic-ui-react'
 
+import '../words.css'
 
 class TextFilter extends Component {
   showFilteredWords = () => {
@@ -22,9 +23,11 @@ class TextFilter extends Component {
   
   render() {
     return (
-      <div>
-      {this.showFilteredWords()}
-      </div>
+      <Segment className="editor">
+        <div>
+          {this.showFilteredWords()}
+        </div>
+      </Segment>
     )
   }
 }

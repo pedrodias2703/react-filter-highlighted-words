@@ -4,7 +4,7 @@ import { Segment } from 'semantic-ui-react'
 
 import { addWord, removeWord } from '../../../redux/actions/WordsActions';
 
-import './TextMarker.css';
+import '../words.css';
 
 const LOREM = 'Laborum minim excepteur do irure eu ea occaecat ipsum eiusmod consequat consequat id Lorem. Aliqua fugiat sit deserunt ea elit mollit eu in do ut ad nostrud cupidatat. Culpa deserunt excepteur duis ut non aliqua cupidatat ipsum eu.'
 
@@ -43,7 +43,7 @@ class TextMarker extends Component {
     const { children =  LOREM } = this.props;
 
     return (
-        <Segment>
+        <Segment className="editor">
             <div contentEditable 
                 suppressContentEditableWarning 
                 onMouseUp={this.handleSelection}

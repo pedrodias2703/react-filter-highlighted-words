@@ -1,0 +1,15 @@
+.editor {
+    height: 200px;
+}
+
+.editor > div {
+    height: 100%;
+}
+
+.editor > div span {
+    cursor: pointer;
+}
+
+.editor div:focus {
+    outline: none;
+}
