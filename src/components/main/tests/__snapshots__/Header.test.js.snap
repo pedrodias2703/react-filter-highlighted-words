@@ -12,10 +12,10 @@ exports[`header renders correctly 1`] = `
     name="code"
   />
   <HeaderContent>
-    WAES Assessment
+    Filter Highlighted Words
   </HeaderContent>
   <HeaderSubheader>
     Pedro Dias - pedroboi@gmail.com
   </HeaderSubheader>
 </Header>
-`
+`;

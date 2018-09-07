@@ -9,7 +9,7 @@ import { setFilteredColor } from "../../../../redux/actions/ColorActions"
 const mockStore = configureStore()
 const store = mockStore({
     words: {
-        red: ['WAES']
+        red: ['In the light you will find the road']
     },
     colors: { 
         filteredColors: [], 

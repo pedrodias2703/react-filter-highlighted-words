@@ -4,7 +4,7 @@ import { WORDS } from '../../types'
 describe('words actions', () => {
   test('should create an action to add a word', () => {
     const color = 'red'
-    const word = 'WAES'
+    const word = 'In the light you will find the road'
     const expectedAction = {
       type: WORDS.ADD_WORD,
       payload: { color, word }
@@ -14,7 +14,7 @@ describe('words actions', () => {
 
   test('should create an action to remove a word', () => {
     const color = 'green'
-    const word = 'netherlands'
+    const word = 'dolphins'
     const expectedAction = {
       type: WORDS.REMOVE_WORD,
       payload: { color, word }
