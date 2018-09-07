@@ -5,9 +5,9 @@ import toJson from 'enzyme-to-json'
 import Main from '../Main'
 
 describe('Main', () => {
-    test('renders correctly', () => {
-        const wrapper = shallow(<Main />)
-
-        expect(toJson(wrapper)).toMatchSnapshot()
-    })    
+  test('renders correctly', () => {
+    const wrapper = shallow(<Main />)
+    
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })    
 })

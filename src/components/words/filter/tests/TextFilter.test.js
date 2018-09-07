@@ -8,39 +8,39 @@ import { setFilteredColor } from "../../../../redux/actions/ColorActions"
 
 const mockStore = configureStore()
 const store = mockStore({
-    words: {
-        red: ['In the light you will find the road']
-    },
-    colors: { 
-        filteredColors: [], 
-        selectedColor: undefined
-    }
+  words: {
+    red: ['In the light you will find the road']
+  },
+  colors: { 
+    filteredColors: [], 
+    selectedColor: undefined
+  }
 })
 
 const instance = () => {
-    const props = {
-        store: store,
-    }
-    const wrapper = shallow(<TextFilter { ...props }/>)
-    
-    return {
-        wrapper
-    }
+  const props = {
+    store: store,
+  }
+  const wrapper = shallow(<TextFilter { ...props }/>)
+  
+  return {
+    wrapper
+  }
 }
 
 describe('TextFilter', () => {
-    test('renders correctly intiallly', () => {
-        const { wrapper } = instance()
-        const component = wrapper.dive()
-
-        expect(toJson(component)).toMatchSnapshot()
-    })
-
-    test('renders correct when words are filtered', () => {
-        store.dispatch(setFilteredColor('red'))
-        
-        const { wrapper } = instance()
-
-        expect(store.getActions()).toMatchSnapshot()
-    })
+  test('renders correctly intiallly', () => {
+    const { wrapper } = instance()
+    const component = wrapper.dive()
+    
+    expect(toJson(component)).toMatchSnapshot()
+  })
+  
+  test('renders correct when words are filtered', () => {
+    store.dispatch(setFilteredColor('red'))
+    
+    const { wrapper } = instance()
+    
+    expect(store.getActions()).toMatchSnapshot()
+  })
 })

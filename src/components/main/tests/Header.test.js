@@ -4,9 +4,9 @@ import toJson from 'enzyme-to-json'
 import Header from '../Header'
 
 describe('header', () => {
-    test('renders correctly', () => {
-        const wrapper = shallow(<Header />)
-
-        expect(toJson(wrapper)).toMatchSnapshot()
-    })    
+  test('renders correctly', () => {
+    const wrapper = shallow(<Header />)
+    
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })    
 })

@@ -1,15 +1,16 @@
 .editor {
-    height: 200px;
+  height: 200px;
+  overflow: auto;
 }
 
 .editor > div {
-    height: 100%;
+  height: 100%;
 }
 
 .editor > div span {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .editor div:focus {
-    outline: none;
+  outline: none;
 }
