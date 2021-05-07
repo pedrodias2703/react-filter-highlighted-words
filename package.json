@@ -15,7 +15,7 @@
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint-config-prettier": "^3.0.1",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
